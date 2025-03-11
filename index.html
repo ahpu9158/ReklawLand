@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reklaw Land</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1> Reklaw Land </h1>
+    </div>
+    <div class="check">
+        <p>คุณเป็นง้องแง้งใช่หรือไม่</p>
+        <img src="res/65.jpg" class="hidden-img" id="reklaw-img">
+        <div class="button-container">
+            <button id="yes-btn" class="btn">ใช่</button>
+            <button id="no-btn" class="btn">ไม่ใช่</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("no-btn").addEventListener("click", function() {
+            document.getElementById("reklaw-img").style.display = "block";
+            let yesBtn = document.getElementById("yes-btn");
+            let currentSize = window.getComputedStyle(yesBtn).fontSize;
+            let newSize = parseInt(currentSize) + 10 + "px";
+            yesBtn.style.fontSize = newSize;
+            yesBtn.style.padding = "calc(" + parseInt(yesBtn.style.padding || "10") + "px + 5px)";
+        });
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            window.location.href = "welcome.html";
+        });
+    </script>
+</body>
+</html> 

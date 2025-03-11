@@ -1,0 +1,94 @@
+body {
+    background-color: #e9dcec; 
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header h1 {
+    color: #2c2534; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.check {
+    position: relative;
+    display: block;
+    width: 80%;
+    max-width: 600px; 
+    height: auto; 
+    padding: 20px; 
+    margin: 20px auto; 
+    background-color: #fdfdfd; 
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 20px; 
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); 
+    align-items: center;
+    justify-content: center;
+}
+.check p {
+    color: #2c2534; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.hidden-img{
+    display: none;
+    width: 100%;
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+}
+
+#no-btn {
+    background-color: #6a0dad; 
+    color: white;
+}
+
+#no-btn:hover {
+    background-color: #8e24aa
+}
+
+#yes-btn {
+    background-color: #9c27b0; 
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: #ba68c8;
+}
+
+.booking-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #7b1fa2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.booking-btn:hover {
+    background-color: #ab47bc; 
+}
